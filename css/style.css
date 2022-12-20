@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: rgb(146, 126, 151);
+  --secondary: rgba(191, 102, 209, 0.623);
+  --dark:  rgb(#000);
+  --light: rgb(#ffff);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,3 +28,88 @@ h6 {
 p {
   margin: 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: var(--primary);
+}
+header h1 {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--secondary);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 20px;
+  color: var(--dark);
+  font-size: 1.5rem;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2rem;
+  background-position: bottom;
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+}
+
+#hero-banner {
+  width: 100%;
+  background-image: url(https://t4.ftcdn.net/jpg/04/04/73/39/360_F_404733910_2mIXr6RbC5G3WZJFjopVsBaR3EOM6Bqy.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-wrapper {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section #work {
+  padding: 20px;
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.page-section h2 {
+  padding: 5px;
+  display: flex;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2rem;
+  background-position: bottom;
+}
+
+.page-section div {
+margin: 25px;
+margin-bottom: 10px;
+text-align: center;
+}
+
